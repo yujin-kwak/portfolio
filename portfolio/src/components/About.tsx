@@ -24,7 +24,7 @@ const About = () => (
       <div className="space-y-6">
         <a
           href="mailto:yujin02371@gmail.com"
-          className="flex items-center p-4 card-bg rounded-lg hover:bg-indigo-900/50 transition duration-300"
+          className="flex items-center p-4 card-bg bg-[rgba(17,24,39,0.6)] rounded-lg hover:bg-indigo-900/50 transition duration-300"
         >
           <EnvelopeIcon className="text-2xl text-indigo-400 w-8 h-8" />
           <span className="ml-4 text-lg text-white">yujin02371@gmail.com</span>
@@ -33,7 +33,7 @@ const About = () => (
           href="https://github.com/yujin-kwak"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 card-bg rounded-lg hover:bg-indigo-900/50 transition duration-300"
+          className="flex items-center p-4 card-bg bg-[rgba(17,24,39,0.6)] rounded-lg hover:bg-indigo-900/50 transition duration-300"
         >
           <GithubIcon className="text-2xl text-indigo-400 w-8 h-8" />
           <span className="ml-4 text-lg text-white">github.com/yujin-kwak</span>
@@ -42,7 +42,7 @@ const About = () => (
           href="https://velog.io/@yujin02371"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 card-bg rounded-lg hover:bg-indigo-900/50 transition duration-300"
+          className="flex items-center p-4 card-bg bg-[rgba(17,24,39,0.6)]  rounded-lg hover:bg-indigo-900/50 transition duration-300"
         >
           <BlogIcon className="text-2xl text-indigo-400 w-8 h-8" />
           <span className="ml-4 text-lg text-white">

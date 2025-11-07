@@ -1,5 +1,5 @@
 const Navbar = () => (
-  <nav className="fixed top-0 left-0 right-0 z-50 card-bg shadow-lg">
+  <nav className="fixed top-0 left-0 right-0 z-50 card-bg bg-[rgba(17,24,39,0.6)]  shadow-lg">
     <div className="max-w-6xl mx-auto px-4">
       {/* mx-auto px4: 수평 중앙 정렬 */}
       <div className="flex justify-between items-center h-16">
