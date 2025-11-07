@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
+import About from "@/components/About";
 
 export default function PortfolioPage() {
   return (
@@ -10,6 +11,7 @@ export default function PortfolioPage() {
       <Navbar />
       <main>
         <Home />
+        <About />
       </main>
       <Footer />
     </div>
