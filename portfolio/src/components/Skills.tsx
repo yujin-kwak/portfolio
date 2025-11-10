@@ -13,7 +13,7 @@ const Skills = () => (
                         <li>- Chart.js (데이터 시각화)</li>
                     </ul>
                 </div>
-                <div className="card-bg p-8 rounded-xl h-full">
+                <div className="card-bg bg-[rgba(17,24,39,0.6)] p-8 rounded-xl h-full">
                 <h3 className="text-2xl font-bold text-amber-300 mb-4">Deployment & Tools</h3>
                 <ul className="space-y-2 text-gray-300">
                     <li>- Git, GitHub</li>
