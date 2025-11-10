@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 
 export default function PortfolioPage() {
   return (
@@ -12,6 +13,7 @@ export default function PortfolioPage() {
       <main>
         <Home />
         <About />
+        <Skills />
       </main>
       <Footer />
     </div>
