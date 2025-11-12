@@ -9,6 +9,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import ProjectSection from "@/components/ProjectSection";
 import ProjectModal from "@/components/ProjectModal";
+import Experience from "@/components/Experience";
 
 export default function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -32,6 +33,7 @@ export default function PortfolioPage() {
         <About />
         <Skills />
         <ProjectSection onProjectClick={handleProjectClick} />
+        <Experience />
       </main>
 
       <Footer />
