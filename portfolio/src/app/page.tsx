@@ -11,6 +11,7 @@ import ProjectSection from "@/components/ProjectSection";
 import ProjectModal from "@/components/ProjectModal";
 import Experience from "@/components/Experience";
 import Certification from "@/components/Certification";
+import Awards from "@/components/Awards";
 
 export default function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -36,6 +37,7 @@ export default function PortfolioPage() {
         <ProjectSection onProjectClick={handleProjectClick} />
         <Experience />
         <Certification />
+        <Awards />
       </main>
 
       <Footer />
