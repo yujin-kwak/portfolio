@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={notoSansKR.className}>{children}</body>
+      <body className={`${notoSansKR.className} bg-gray-900 text-gray-200`}>
+        {children}
+      </body>
     </html>
   );
 }

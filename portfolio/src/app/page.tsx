@@ -1,21 +1,42 @@
 "use client";
-import React from "react";
+
+import { useState } from "react";
+import { Project } from "@/types";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import ProjectSection from "@/components/ProjectSection";
+import ProjectModal from "@/components/ProjectModal";
 
 export default function PortfolioPage() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    document.body.style.overflow = "auto";
+  };
+
   return (
-    <div className="max-w-screen min-h-screen bg-gray-900">
+    <>
       <Navbar />
-      <main>
+
+      <main className="relative z-10">
         <Home />
         <About />
         <Skills />
+        <ProjectSection onProjectClick={handleProjectClick} />
       </main>
+
       <Footer />
-    </div>
+
+      <ProjectModal project={selectedProject} onClose={handleCloseModal} />
+    </>
   );
 }
