@@ -15,17 +15,13 @@ const Certification = () => (
             <p className="text-gray-400">2025.06</p>
           </div>
 
-          <div className="border-t border-gray-700/50"></div>
-
-          <div>
+          <div className="border-t border-gray-700/50 pt-6">
             <h4 className="text-xl font-bold text-white">컴퓨터활용능력 1급</h4>
             <p className="text-indigo-300 font-semibold my-1">대한상공회의소</p>
             <p className="text-gray-400">2020.08</p>
           </div>
 
-          <div className="border-t border-gray-700/50"></div>
-
-          <div>
+          <div className="border-t border-gray-700/50 pt-6">
             <h4 className="text-xl font-bold text-white">
               TOEIC(Speaking) IM3
             </h4>
