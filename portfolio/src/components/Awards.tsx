@@ -1,5 +1,9 @@
-const Awards = () => (
-  <section id="awards" className="py-24 px-4">
+type AwardsSectionProps = {
+  ref: React.Ref<HTMLElement>;
+};
+
+const Awards = ({ ref }: AwardsSectionProps) => (
+  <section id="awards" ref={ref} data-color="#111827" className="py-24 px-4">
     <div className="max-w-6xl mx-auto w-full">
       <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
         Awards

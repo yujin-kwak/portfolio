@@ -1,5 +1,14 @@
-const Experience = () => (
-  <section id="experience" className="py-24 px-4">
+type ExperienceSectionProps = {
+  ref: React.Ref<HTMLElement>;
+};
+
+const Experience = ({ ref }: ExperienceSectionProps) => (
+  <section
+    id="experience"
+    ref={ref}
+    data-color="#111827"
+    className="py-24 px-4"
+  >
     <div className="max-w-6xl mx-auto w-full">
       <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
         Experience & Education

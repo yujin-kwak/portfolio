@@ -2,8 +2,17 @@ import EnvelopeIcon from "./icons/EnvelopeIcon";
 import GithubIcon from "./icons/GithubIcon";
 import BlogIcon from "./icons/BlogIcon";
 
-const About = () => (
-  <section id="about" className="min-h-screen py-24 px-4 flex items-center">
+type AboutSectionProps = {
+  ref: React.Ref<HTMLElement>;
+};
+
+const About = ({ ref }: AboutSectionProps) => (
+  <section
+    id="about"
+    ref={ref}
+    data-color="#1f2937"
+    className="min-h-screen py-24 px-4 flex items-center"
+  >
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
       <div className="md:col-span-2">
         <h2 className="text-4xl font-bold mb-6 text-indigo-400">About Me</h2>

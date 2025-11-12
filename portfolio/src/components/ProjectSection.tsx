@@ -4,13 +4,19 @@ import ProjectCard from "./ProjectCard";
 
 interface ProjectsSectionProps {
   onProjectClick: (project: Project) => void;
+  ref: React.Ref<HTMLElement>;
 }
 
 const ProjectsSection = (props: ProjectsSectionProps) => {
-  const { onProjectClick } = props;
+  const { onProjectClick, ref } = props;
 
   return (
-    <section id="projects" className="min-h-screen py-24 px-4">
+    <section
+      id="projects"
+      ref={ref}
+      data-color="#4b5563"
+      className="min-h-screen py-24 px-4"
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
           Projects

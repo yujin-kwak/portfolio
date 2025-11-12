@@ -1,6 +1,12 @@
-const Home = () => (
+type HomeSectionProps = {
+  ref: React.Ref<HTMLElement>;
+};
+
+const Home = ({ ref }: HomeSectionProps) => (
   <section
     id="home"
+    ref={ref}
+    data-color="#111827"
     className="min-h-screen flex flex-col justify-center items-center text-center p-4"
   >
     <h1 className="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-white text-glow">

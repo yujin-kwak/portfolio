@@ -1,5 +1,14 @@
-const Certification = () => (
-  <section id="certifications" className="py-24 px-4">
+type CertificationsSectionProps = {
+  ref: React.Ref<HTMLElement>;
+};
+
+const Certification = ({ ref }: CertificationsSectionProps) => (
+  <section
+    id="certifications"
+    ref={ref}
+    data-color="#1f2937"
+    className="py-24 px-4"
+  >
     <div className="max-w-6xl mx-auto w-full">
       <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
         Certifications
