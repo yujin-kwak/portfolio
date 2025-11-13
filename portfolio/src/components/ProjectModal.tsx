@@ -50,7 +50,10 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           </video>
         </div>
 
-        <p id="modal-description" className="text-gray-300 leading-relaxed">
+        <p
+          id="modal-description"
+          className="text-gray-300 leading-relaxed whitespace-pre-wrap"
+        >
           {project.details}
         </p>
       </div>

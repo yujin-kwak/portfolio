@@ -32,6 +32,7 @@ const Skills = ({ ref }: SkillsSectionProps) => (
             <li>- Git, GitHub</li>
             <li>- Notion</li>
             <li>- Figma</li>
+            <li>- Vercel</li>
           </ul>
         </div>
       </div>

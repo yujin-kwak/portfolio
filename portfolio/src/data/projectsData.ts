@@ -6,14 +6,30 @@ export const projectsData: Project[] = [
     title: "개인 포트폴리오",
     isTeamProject: false,
     subtitle: "Next.js/TypeScript 기반 인터랙티브 포트폴리오",
-    period: "2025.10.31 (제작 중)",
-    role: ["Next.js, TypeScript, Tailwind CSS 기반 포트폴리오 기획 및 개발"],
+    period: "2025.10.31 ~ 2025.11.13",
+    role: [
+      "Next.js, TypeScript, Tailwind CSS 기반 포트폴리오 기획 및 개발",
+      "Canvas API를 활용한 역동적인 배경 파티클 구현",
+      "Intersection Observer를 이용한 인터랙션 구현",
+      "웹 표준 및 웹 접근성을 준수한 모달 컴포넌트 설계",
+    ],
     description:
-      "Next.js, TypeScript, Tailwind CSS 스택을 기반으로 처음부터 구축한 인터랙티브 개인 포트폴리오입니다. 컴포넌트 기반 아키텍처와 성능 최적화(CLS 방지 등)에 중점을 두었습니다.",
-    details:
-      "Next.js의 App Router를 기반으로 각 섹션을 컴포넌트화하여 개발했습니다. TypeScript를 도입하여 프로젝트 전반의 타입 안정성을 확보했으며, Tailwind CSS를 통해 일관된 디자인 시스템을 유지했습니다.",
-    techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    videoSrc: "/videos/bookstore.mp4",
+      "Next.js, TypeScript, Tailwind CSS 스택을 기반으로 성능과 인터랙션에 중점을 두고 구축한 개인 포트폴리오입니다. Canvas API와 Intersection Observer를 활용하여 역동적인 배경 효과와 부드러운 스크롤 경험을 구현했으며, Vercel을 통해 서버리스 환경에 배포했습니다.",
+    details: `이 프로젝트는 최신 Next.js 및 TypeScript 환경에서 개발되었습니다.
+성능 및 배경: Canvas API를 사용하여 파티클 배경을 구현했습니다. GIF 대신 mp4를 사용하여 로딩 속도를 최적화했습니다.
+동적 인터랙션: Intersection Observer를 활용하여 기능을 스크롤 시 부드러운 배경색 전환 효과를 구현했습니다.
+디자인 시스템: Tailwind CSS와 backdrop-filter 속성을 조합하여 글래스모피즘 기반의 모던한 UI를 완성했습니다.   
+배포 환경: Next.js의 공식 플랫폼인 Vercel에 서버리스 환경으로 배포했습니다.`,
+    techStack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Canvas API",
+      "IntersectionObserver",
+      "Vercel",
+    ],
+    videoSrc: "/videos/portfolio.mp4",
   },
   {
     id: 2,
