@@ -9,4 +9,5 @@ export interface Project {
   details: string;
   techStack: string[];
   videoSrc: string;
+  posterSrc: string;
 }

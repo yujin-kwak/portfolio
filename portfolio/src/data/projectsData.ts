@@ -30,6 +30,7 @@ export const projectsData: Project[] = [
       "Vercel",
     ],
     videoSrc: "/videos/portfolio.mp4",
+    posterSrc: "/images/portfolio.png",
   },
   {
     id: 2,
@@ -59,6 +60,7 @@ export const projectsData: Project[] = [
       "Figma",
     ],
     videoSrc: "/videos/bookstore.mp4",
+    posterSrc: "/images/bookstore.png",
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ export const projectsData: Project[] = [
       "Chart.js",
     ],
     videoSrc: "/videos/smart-farm.mp4",
+    posterSrc: "/images/smart-farm.png",
   },
   {
     id: 4,
@@ -110,6 +113,7 @@ export const projectsData: Project[] = [
       "Figma로 페이지 구상을 한 뒤, Chart.js를 이용해 데이터 Bar Chart를 구현했습니다. CSS의 hover와 transform을 응용해 앨범 위에 마우스를 올리면 반짝이는 애니메이션을 구현했습니다. 또한 JavaScript(Vanilla JS)를 사용하여 이미지 슬라이더, 스크롤에 따른 Go Top 버튼, 비밀번호가 일치해야 삭제되는 방명록 등 다양한 동적 기능을 구현했습니다.",
     techStack: ["JavaScript", "HTML", "CSS"],
     videoSrc: "/videos/iu-fanpage.mp4",
+    posterSrc: "/images/iu-fanpage.png",
   },
 ];
 

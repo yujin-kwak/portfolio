@@ -39,12 +39,10 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           <video
             key={project.id}
             src={project.videoSrc}
-            autoPlay
-            loop
-            muted
+            controls
             playsInline
             className="w-full h-full object-contain rounded-md"
-            poster={`https://placehold.co/1280x720/1f2937/a5b4fc?text=Loading+Video...`}
+            poster={project.posterSrc}
           >
             비디오를 지원하지 않는 브라우저입니다.
           </video>
