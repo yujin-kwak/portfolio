@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
+/*  body의 transition (배경색 변경 시 부드러운 효과) */
 body {
   transition: background-color 0.8s ease-in-out;
 }
 
-.card-bg {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
+/* .text-glow (홈 섹션 타이틀의 네온/발광 효과) */
 .text-glow {
   text-shadow: 0 0 8px rgba(187, 247, 208, 0.3),
     0 0 20px rgba(167, 243, 208, 0.3);
+}
+
+/* .card-bg (글래스모피즘 / 유리 질감 효과)  */
+.card-bg {
+  -webkit-backdrop-filter: blur(10px); /* Webkit 브라우저를 위한 접두사 */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
