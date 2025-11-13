@@ -4,7 +4,7 @@ const Navbar = () => (
       {/* mx-auto px4: 수평 중앙 정렬 */}
       <div className="flex justify-between items-center h-16">
         <a
-          href="#Home"
+          href="#home"
           className="text-2xl font-bold tracking-wider text-white"
         >
           YUJIN KWAK

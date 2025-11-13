@@ -12,6 +12,7 @@ import ProjectModal from "@/components/ProjectModal";
 import Experience from "@/components/Experience";
 import Certification from "@/components/Certification";
 import Awards from "@/components/Awards";
+import ParticleCanvas from "@/components/ParticleCanvas";
 
 export default function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -42,20 +43,17 @@ export default function PortfolioPage() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // 섹션이 화면 중앙(50%)에 들어왔을 때
           if (entry.isIntersecting) {
-            // data-color 속성값을 읽어옵니다.
             const color = entry.target.getAttribute("data-color");
             if (color) {
-              setBgColor(color); // 배경색 상태를 업데이트합니다.
+              setBgColor(color);
             }
           }
         });
       },
-      { threshold: 0.5 } // 섹션이 50% 이상 보일 때 반응
+      { threshold: 0.5 }
     );
 
-    // 모든 섹션의 '센서(ref)'를 관찰 대상으로 등록합니다.
     const refs = Object.values(sectionRefs);
     refs.forEach((ref) => {
       if (ref.current) {
@@ -63,25 +61,24 @@ export default function PortfolioPage() {
       }
     });
 
-    // 컴포넌트가 사라질 때 관찰을 중지합니다. (메모리 누수 방지)
     return () => {
       refs.forEach((ref) => {
         if (ref.current) {
-          // eslint-disable-next-line react-hooks/exhaustive-deps
           observer.unobserve(ref.current);
         }
       });
     };
-  }, []); // 빈 배열: 페이지가 처음 로드될 때 '한 번만' 실행
+  }, []);
 
-  // 10. [추가] bgColor 상태가 바뀔 때마다, 실제 <body>의 배경색을 변경합니다.
   useEffect(() => {
     document.body.style.backgroundColor = bgColor;
-  }, [bgColor]); // bgColor 값이 바뀔 때마다 실행
+  }, [bgColor]);
+
   return (
     <>
-      <Navbar />
+      <ParticleCanvas />
 
+      <Navbar />
       <main className="relative z-10">
         <Home ref={sectionRefs.home} />
         <About ref={sectionRefs.about} />
