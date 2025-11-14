@@ -1,8 +1,6 @@
-type SkillsSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
+import React from "react";
 
-const Skills = ({ ref }: SkillsSectionProps) => (
+const Skills = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section
     id="skills"
     ref={ref}
@@ -38,6 +36,8 @@ const Skills = ({ ref }: SkillsSectionProps) => (
       </div>
     </div>
   </section>
-);
+));
+
+Skills.displayName = "Skills";
 
 export default Skills;

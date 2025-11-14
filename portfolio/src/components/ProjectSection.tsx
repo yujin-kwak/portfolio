@@ -1,16 +1,14 @@
 import { Project } from "@/types";
 import { projectsData } from "@/data/projectsData";
 import ProjectCard from "./ProjectCard";
+import React from "react";
 
-interface ProjectsSectionProps {
+interface ProjectSectionProps {
   onProjectClick: (project: Project) => void;
-  ref: React.Ref<HTMLElement>;
 }
 
-const ProjectsSection = (props: ProjectsSectionProps) => {
-  const { onProjectClick, ref } = props;
-
-  return (
+const ProjectSection = React.forwardRef<HTMLDivElement, ProjectSectionProps>(
+  ({ onProjectClick }, ref) => (
     <section
       id="projects"
       ref={ref}
@@ -33,7 +31,9 @@ const ProjectsSection = (props: ProjectsSectionProps) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+);
 
-export default ProjectsSection;
+ProjectSection.displayName = "ProjectSection";
+
+export default ProjectSection;

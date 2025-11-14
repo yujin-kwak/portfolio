@@ -1,8 +1,6 @@
-type AwardsSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
+import React from "react";
 
-const Awards = ({ ref }: AwardsSectionProps) => (
+const Awards = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section id="awards" ref={ref} data-color="#111827" className="py-24 px-4">
     <div className="max-w-6xl mx-auto w-full">
       <h2 className="text-4xl font-bold mb-12 text-center text-indigo-400">
@@ -52,6 +50,8 @@ const Awards = ({ ref }: AwardsSectionProps) => (
       </div>
     </div>
   </section>
-);
+));
+
+Awards.displayName = "Awards";
 
 export default Awards;

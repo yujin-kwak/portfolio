@@ -1,8 +1,6 @@
-type CertificationsSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
+import React from "react";
 
-const Certification = ({ ref }: CertificationsSectionProps) => (
+const Certification = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section
     id="certifications"
     ref={ref}
@@ -41,6 +39,8 @@ const Certification = ({ ref }: CertificationsSectionProps) => (
       </div>
     </div>
   </section>
-);
+));
+
+Certification.displayName = "Certification";
 
 export default Certification;

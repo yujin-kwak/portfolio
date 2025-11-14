@@ -1,8 +1,6 @@
-type HomeSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
+import React from "react";
 
-const Home = ({ ref }: HomeSectionProps) => (
+const Home = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section
     id="home"
     ref={ref}
@@ -20,6 +18,8 @@ const Home = ({ ref }: HomeSectionProps) => (
       통해 함께 성장하는 것을 중요하게 생각합니다.
     </p>
   </section>
-);
+));
+
+Home.displayName = "Home";
 
 export default Home;

@@ -1,12 +1,9 @@
 import EnvelopeIcon from "./icons/EnvelopeIcon";
 import GithubIcon from "./icons/GithubIcon";
 import BlogIcon from "./icons/BlogIcon";
+import React from "react";
 
-type AboutSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
-
-const About = ({ ref }: AboutSectionProps) => (
+const About = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section
     id="about"
     ref={ref}
@@ -61,6 +58,7 @@ const About = ({ ref }: AboutSectionProps) => (
       </div>
     </div>
   </section>
-);
+));
+About.displayName = "About";
 
 export default About;

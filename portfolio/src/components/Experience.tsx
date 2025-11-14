@@ -1,8 +1,6 @@
-type ExperienceSectionProps = {
-  ref: React.Ref<HTMLElement>;
-};
+import React from "react";
 
-const Experience = ({ ref }: ExperienceSectionProps) => (
+const Experience = React.forwardRef<HTMLDivElement>((_, ref) => (
   <section
     id="experience"
     ref={ref}
@@ -30,6 +28,7 @@ const Experience = ({ ref }: ExperienceSectionProps) => (
       </div>
     </div>
   </section>
-);
+));
 
+Experience.displayName = "Experience";
 export default Experience;

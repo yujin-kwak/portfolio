@@ -20,13 +20,13 @@ export default function PortfolioPage() {
   const [bgColor, setBgColor] = useState("#111827");
 
   const sectionRefs = {
-    home: useRef<HTMLElement>(null),
-    about: useRef<HTMLElement>(null),
-    skills: useRef<HTMLElement>(null),
-    projects: useRef<HTMLElement>(null),
-    experience: useRef<HTMLElement>(null),
-    certification: useRef<HTMLElement>(null),
-    awards: useRef<HTMLElement>(null),
+    home: useRef<HTMLDivElement>(null),
+    about: useRef<HTMLDivElement>(null),
+    skills: useRef<HTMLDivElement>(null),
+    projects: useRef<HTMLDivElement>(null),
+    experience: useRef<HTMLDivElement>(null),
+    certification: useRef<HTMLDivElement>(null),
+    awards: useRef<HTMLDivElement>(null),
   };
 
   const handleProjectClick = (project: Project) => {
